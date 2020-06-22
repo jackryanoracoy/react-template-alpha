@@ -1,0 +1,16 @@
+// React Template
+// Author:   Jack Ryan Oracoy
+// URL:      https://github.com/jackryanoracoy/react-template
+// License:  https://github.com/jackryanoracoy/react-template/blob/master/LICENSE.txt
+
+/*--------------------------------------------------
+  List
+--------------------------------------------------*/
+
+.list {
+  list-style-type: none;
+
+  &.is-disc { list-style-type: disc; }
+  &.is-square { list-style-type: square; }
+  &.is-circle { list-style-type: circle; }
+}

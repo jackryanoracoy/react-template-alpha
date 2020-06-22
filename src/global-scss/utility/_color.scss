@@ -1,0 +1,21 @@
+// React Template
+// Author:   Jack Ryan Oracoy
+// URL:      https://github.com/jackryanoracoy/react-template
+// License:  https://github.com/jackryanoracoy/react-template/blob/master/LICENSE.txt
+
+/*--------------------------------------------------
+  Color
+--------------------------------------------------*/
+
+@each $color, $value in $theme-colors {
+  .color-#{$color} { color: #{$value}; }
+}
+
+// @each $color, $value in $colors {
+//   .color-#{$color} { color: #{$value}; }
+// }
+
+@each $shade, $value in $greys {
+  .color-grey-#{$shade} { color: #{$value}; }
+}
+

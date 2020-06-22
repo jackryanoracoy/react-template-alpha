@@ -1,0 +1,14 @@
+// React Template
+// Author:   Jack Ryan Oracoy
+// URL:      https://github.com/jackryanoracoy/react-template
+// License:  https://github.com/jackryanoracoy/react-template/blob/master/LICENSE.txt
+
+/*--------------------------------------------------
+  Clearfix
+--------------------------------------------------*/
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}

@@ -1,0 +1,11 @@
+// React Template
+// Author:   Jack Ryan Oracoy
+// URL:      https://github.com/jackryanoracoy/react-template
+// License:  https://github.com/jackryanoracoy/react-template/blob/master/LICENSE.txt
+
+/*--------------------------------------------------
+  Image
+--------------------------------------------------*/
+
+.img-fluid { max-width: 100%; height: auto; }
+.img-crispt { @include img-render-crisp(); }

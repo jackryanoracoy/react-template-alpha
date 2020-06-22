@@ -1,0 +1,9 @@
+@import '../../global-scss/setting/variable';
+@import '../../global-scss/setting/mixin';
+
+.browser-notice {
+  padding: 20px;
+  color: $white;
+  text-align: center;
+  background-color: $danger;
+}

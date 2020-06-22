@@ -1,0 +1,12 @@
+// React Template
+// Author:   Jack Ryan Oracoy
+// URL:      https://github.com/jackryanoracoy/react-template
+// License:  https://github.com/jackryanoracoy/react-template/blob/master/LICENSE.txt
+
+/*--------------------------------------------------
+  Focus
+--------------------------------------------------*/
+
+*:focus { outline: 1px dotted $info; }
+
+body:not(.js-tab-used) *:focus { outline: none; }

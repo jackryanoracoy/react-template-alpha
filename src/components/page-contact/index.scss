@@ -1,0 +1,10 @@
+@import '../../global-scss/setting/variable';
+@import '../../global-scss/setting/mixin';
+
+.contact {
+  padding-top: $header-height_m;
+
+  @include media-breakpoint-min(lg) {
+    padding-top: $header-height + $nav-height;
+  }
+}

@@ -1,0 +1,7 @@
+@import '../../global-scss/setting/variable';
+@import '../../global-scss/setting/mixin';
+
+.footer {
+  padding: $section-gutter-ver $section-gutter-hor;
+  background-color: $grey-300;
+}
