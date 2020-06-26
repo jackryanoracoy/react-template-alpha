@@ -2,17 +2,45 @@ import React, { Component } from 'react';
 
 import './index.scss';
 
-class Form extends Component {
+class FormInput extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {value: ''};
+
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+  handleChange(event) {
+    this.setState({value: event.target.value});
+  }
+
+  handleSubmit(event) {
+    alert('A name was submitted: ' + this.state.value);
+    event.preventDefault();
+  }
+
   render() {
+    const { FormInputClass } = this.props;
+    const { FormInputName } = this.props;
+    const { FormInputType } = this.props;
+    const { FormInputPlaceholder } = this.props;
     return (
-      <form className="form">
-        <input className="width-100 mb-20" type="text" placeholder="Input box 1" />
-        <input className="width-100 mb-20" type="text" placeholder="Input box 2" />
-        <input className="width-100 mb-20" type="text" placeholder="Input box 3" />
-        <button>Dummy Button</button>
-      </form>
+      <input
+      className={FormInputClass ? FormInputClass : ''}
+      name={FormInputName ? FormInputName : ''}
+      type={FormInputType ? FormInputType : 'text'}
+      placeholder={FormInputPlaceholder ? FormInputPlaceholder : 'Input text here...'}
+      value={this.state.value}
+      onChange={this.handleChange} />
     );
   }
 }
 
-export default Form;
+class FormButton extends Component {
+  render() {
+    return <input type="submit" value={this.props.ButtonText ? this.props.ButtonText : 'Submit'} />
+  }
+}
+
+export { FormInput, FormButton }

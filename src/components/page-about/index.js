@@ -3,8 +3,6 @@ import Button from '../site-button/';
 
 import './index.scss';
 
-const Title = 'About Page Testing';
-
 function About() {
 
   useEffect(() => {
